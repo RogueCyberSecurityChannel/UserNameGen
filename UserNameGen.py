@@ -1,5 +1,4 @@
 import argparse
-import time
 import sys
 from os import path
 
@@ -173,10 +172,8 @@ def generator(user_file,output_file,domain):
          line = fp.readline().lower()
          nb_user+=52
 
-    time.sleep(.5)
     print('[*] Number of users created: ' + str(nb_user) )
-    time.sleep(1)
-    print("[+] Usernames written to output file " + output_file + '\n')
+    print("[+] Usernames written to output file " + output_file)
 
 def main():
 
