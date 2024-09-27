@@ -5,5 +5,6 @@
 |_____|___|___|_| |_|___|__,|_|_|_|___|_____|___|_|_|
 </pre>
 
-#Username Generator
-CMD line username generator. Reads in a text file of First and last names and generates potential usernames along with a appended domain name.
+- Pass in a file of first and last names
+- Title your output file
+- Add a domain name
