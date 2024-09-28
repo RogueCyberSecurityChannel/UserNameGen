@@ -1,4 +1,6 @@
+#!/usr/bin/python3
 import argparse
+import time
 import sys
 from os import path
 
@@ -43,7 +45,7 @@ def arg_error_check(args):
       if(path.exists(args.output_file)):
         arg_errors.append('The file \"' + args.output_file + '\" already exists')
   else:
-    arg_errors.append('Argument error. Example: "UserNameGen.py UserNameGene.py -u <user file> -o <output file> -d <domain> "')
+    arg_errors.append('Argument error. Example: "UserNameGene.py -u <user file> -o <output file> -d <domain>"')
   return arg_errors
 
 def generator(user_file,output_file,domain):
@@ -172,7 +174,9 @@ def generator(user_file,output_file,domain):
          line = fp.readline().lower()
          nb_user+=52
 
-    print('[*] Number of usernames created: ' + str(nb_user) )
+    # time.sleep(.5)
+    print('[*] Number of usersnames created: ' + str(nb_user) )
+    #  time.sleep(1)
     print("[+] Usernames written to output file " + output_file)
 
 def main():
