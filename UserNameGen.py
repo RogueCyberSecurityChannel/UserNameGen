@@ -45,7 +45,7 @@ def arg_error_check(args):
       if(path.exists(args.output_file)):
         arg_errors.append('The file \"' + args.output_file + '\" already exists')
   else:
-    arg_errors.append('Argument error. Example: "UserNameGene.py -u <user file> -o <output file> -d <domain>"')
+    arg_errors.append('Argument error. Example: "UserNameGen.py -u <user file> -o <output file> -d <domain>"')
   return arg_errors
 
 def generator(user_file,output_file,domain):
